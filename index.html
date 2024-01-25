@@ -11,6 +11,9 @@
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
 
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <!-- MY CSS -->
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -61,16 +64,16 @@
     <section id="about">
       <div class="container">
         <div class="row mb-3">
-          <div class="col">
+          <div class="col" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
             <h2 class="text-center">About</h2>
           </div>
         </div>
 
         <div class="row justify-content-evenly fs-5 text-center">
-          <div class="col-md-4">
+          <div class="col-md-4" data-aos="fade-right" data-aos-offset="250">
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus est, laboriosam perspiciatis officiis cupiditate sunt non labore tenetur esse neque.</p>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4" data-aos="fade-left" data-aos-offset="250" data-aos-delay="200">
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem temporibus, at perferendis ab doloribus reprehenderit animi officiis labore quasi alias soluta dolore, voluptatibus aperiam ipsa.</p>
           </div>
         </div>
@@ -96,7 +99,7 @@
 
         <div class="row justify-content-evenly">
           <div class="col-md-4 mb-3">
-            <div class="card">
+            <div class="card" data-aos="flip-up" data-aos-duration="1000">
               <img src="img/projects/1.jpg" class="card-img-top" alt="Gambar Projek Pertama" />
               <div class="card-body">
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -105,7 +108,7 @@
           </div>
 
           <div class="col-md-4 mb-3">
-            <div class="card">
+            <div class="card" data-aos="flip-up" data-aos-duration="1000" data-aos-delay="100">
               <img src="img/projects/2.jpg" class="card-img-top" alt="Gambar Projek Kedua" />
               <div class="card-body">
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -114,7 +117,7 @@
           </div>
 
           <div class="col-md-4 mb-3">
-            <div class="card">
+            <div class="card" data-aos="flip-up" data-aos-duration="1000" data-aos-delay="200">
               <img src="img/projects/3.jpg" class="card-img-top" alt="Gambar Projek Ketiga" />
               <div class="card-body">
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -123,7 +126,7 @@
           </div>
 
           <div class="col-md-4 mb-3">
-            <div class="card">
+            <div class="card" data-aos="flip-up" data-aos-duration="1000" data-aos-delay="300">
               <img src="img/projects/4.jpg" class="card-img-top" alt="Gambar Projek Keempat" />
               <div class="card-body">
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -132,7 +135,7 @@
           </div>
 
           <div class="col-md-4 mb-3">
-            <div class="card">
+            <div class="card" data-aos="flip-up" data-aos-duration="1000" data-aos-delay="400">
               <img src="img/projects/5.jpg" class="card-img-top" alt="Gambar Projek Kelima" />
               <div class="card-body">
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -150,6 +153,10 @@
       </svg>
     </section>
     <!-- END OF PROJECTS -->
+
+    <!-- Gallery -->
+
+    <!-- End Of Gallery -->
 
     <!-- Contact -->
     <section id="contact">
@@ -211,8 +218,16 @@
     </footer>
     <!-- End of Footer -->
 
+    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+    <!-- FORM JS -->
     <script>
       const scriptURL = "https://script.google.com/macros/s/AKfycbw6fs2Sc6ZOcv21vi6v2CKAexyLdFKZoz8xMzQxutQYTjePcTp-Vmw59tN_G3DF8fGTcg/exec";
       const form = document.forms["khrisyantara-contact-form"];
